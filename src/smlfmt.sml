@@ -254,7 +254,7 @@ fun formatOneSML
       let
         val outstream = TextIO.openOut hfp
       in
-        printErr ("formatting " ^ hfp ^ "\n");
+        (* printErr ("formatting " ^ hfp ^ "\n"); *)
         TextIO.output (outstream, result);
         TextIO.output (outstream, "\n");
         TextIO.closeOut outstream
